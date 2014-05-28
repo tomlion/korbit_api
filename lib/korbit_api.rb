@@ -1,6 +1,7 @@
 # TODO: Organize requires
 require 'typhoeus'
 require 'hashie'
+require 'rash'
 require 'addressable/uri'
 require 'korbit_api/client'
 require 'korbit_api/utils'
