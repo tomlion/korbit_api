@@ -10,6 +10,7 @@ Gem::Specification.new do |s|
   s.homepage    = 'https://github.com/charliemoseley/korbit_api'
 
   s.add_dependency('typhoeus')
+  s.add_depencency('hashie')
   s.add_dependency('rash')
   s.add_dependency('addressable')
 end
