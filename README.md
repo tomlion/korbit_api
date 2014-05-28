@@ -25,13 +25,13 @@ open_orders.first.cancel
 ```
 
 Currently Supports:
-user.info
-user.wallet
-user.coins.address.assign
-user.coins.out
-user.coins.out.cancel
-user.coins.status
-user.orders.open
-user.orders.buy
-user.orders.sell
-user.orders.cancel
+* user.info
+* user.wallet
+* user.coins.address.assign
+* user.coins.out
+* user.coins.out.cancel
+* user.coins.status
+* user.orders.open
+* user.orders.buy
+* user.orders.sell
+* user.orders.cancel
