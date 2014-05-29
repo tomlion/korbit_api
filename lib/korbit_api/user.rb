@@ -27,6 +27,14 @@ module KorbitAPI
       self
     end
 
+    def transactions(options = {})
+      Transactions.fetch(@client, options)
+    end
+
+    def fiats
+      @fiats ||= Fiats.new(@client)
+    end
+
     def email
       info if @info_fetched.nil?
       @email
