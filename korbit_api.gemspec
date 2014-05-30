@@ -1,3 +1,6 @@
+lib = File.expand_path('../lib', __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+
 Gem::Specification.new do |s|
   s.name        = 'korbit_api'
   s.version     = '0.0.0'
@@ -7,6 +10,7 @@ Gem::Specification.new do |s|
   s.authors     = ["Charlie Moseley"]
   s.email       = 'charlie@robopengu.in'
   s.files       = ["lib/korbit_api.rb"]
+  s.files      += Dir.glob('lib/**/*.rb')
   s.homepage    = 'https://github.com/charliemoseley/korbit_api'
 
   s.add_dependency('typhoeus')
