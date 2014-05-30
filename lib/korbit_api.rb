@@ -11,7 +11,9 @@ require 'korbit_api/resources/orderbook'
 require 'korbit_api/resources/status'
 require 'korbit_api/resources/transaction'
 
-require 'korbit_api/client'
+require 'korbit_api/utils'
+
+
 require 'korbit_api/coins'
 require 'korbit_api/constants'
 require 'korbit_api/crypto_address'
@@ -26,9 +28,11 @@ require 'korbit_api/transactions'
 require 'korbit_api/transfer'
 require 'korbit_api/transfer_status'
 require 'korbit_api/user'
-require 'korbit_api/utils'
+
 require 'korbit_api/version'
 require 'korbit_api/wallet'
+
+require 'korbit_api/client'
 
 module KorbitAPI
   class << self
