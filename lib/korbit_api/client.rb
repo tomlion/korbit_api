@@ -40,9 +40,6 @@ module KorbitAPI
       request = Typhoeus::Request.new url, method: method, headers: headers,
                                            params: params, body: form_data.query
       @hydra.queue request
-      Rails.logger.info "*" * 88
-      Rails.logger.info "Running request"
-      Rails.logger.info "*" * 88
       @hydra.run
 
       # If the query failed to an expiered OAuth token, fetch a new one and
@@ -102,9 +99,6 @@ module KorbitAPI
       request = Typhoeus::Request.new build_url('oauth2/access_token'),
                                       method: :post, body: body
       @hydra.queue request
-      Rails.logger.info "*" * 88
-      Rails.logger.info "Fetching new OAuth Token"
-      Rails.logger.info "*" * 88
       @hydra.run
 
       # TODO: Make this more intelligent, prevent loops, and support quiet_errors
@@ -131,9 +125,6 @@ module KorbitAPI
       request = Typhoeus::Request.new build_url('oauth2/access_token'),
                                       method: :post, body: body
       @hydra.queue request
-      Rails.logger.info "*" * 88
-      Rails.logger.info "Fetching new OAuth Token"
-      Rails.logger.info "*" * 88
       @hydra.run
 
       # TODO: Make this more intelligent, prevent loops, and support quiet_errors
